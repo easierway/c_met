@@ -1,0 +1,14 @@
+# Project Specific #
+####################
+/.idea/
+/cmake-build-debug/
+/build
+
+# Backup files #
+################
+
+# Compiled source #
+###################
+
+# Logs and databases #
+######################
