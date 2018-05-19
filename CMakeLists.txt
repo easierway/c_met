@@ -52,11 +52,15 @@ ELSE ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     message(FATAL_ERROR "Unsupported compiler '${CMAKE_CXX_COMPILER_ID}'!")
 ENDIF ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 
+# Find all third party packages
+FIND_PACKAGE(Log4cplus REQUIRED)
+
 # Includes, please keep sorted
 INCLUDE_DIRECTORIES(hello/include)
 # Includes, please keep sorted
 
 # Applications, please keep sorted
 ADD_SUBDIRECTORY(hello)
+ADD_SUBDIRECTORY(hellolog4cplus)
 # Applications, please keep sorted
 
