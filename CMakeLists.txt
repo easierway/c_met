@@ -56,10 +56,12 @@ ENDIF ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 FIND_PACKAGE(Log4cplus REQUIRED)
 
 # Includes, please keep sorted
+INCLUDE_DIRECTORIES(cmet/include)
 INCLUDE_DIRECTORIES(hello/include)
 # Includes, please keep sorted
 
 # Applications, please keep sorted
+ADD_SUBDIRECTORY(cmet)
 ADD_SUBDIRECTORY(hello)
 ADD_SUBDIRECTORY(hellolog4cplus)
 # Applications, please keep sorted

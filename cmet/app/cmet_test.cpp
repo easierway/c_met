@@ -1,9 +1,3 @@
-# c_met
-c plus version for g_met, see: https://github.com/easierway/g_met
-
-## example
-```c++
-//The following example is to demonstrate how to use CMet.
 #include <cstdlib>
 #include <iostream>
 
@@ -27,9 +21,3 @@ int main()
     CMET_SEND(Metric("Hello", "world"), Metric("Number1", 1), Metric("Number2", 2.3));
     return EXIT_SUCCESS;
 }
-```
-
-## output
-<pre>
-{"timestamp":"2018-05-20 01:23:30", "fileline":"/home/zxliu/workspace/caichao/mobvista/c_met/cmet/app/cmet_test.cpp:21", "Hello":"world", "Number1":1, "Number2":2.3}
-</pre>
