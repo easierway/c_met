@@ -34,6 +34,16 @@ minsizerel: prebuild
 .PHONY: minsizerel
 
 
+install: relwithdebinfo
+	cd $(BUILD) && $(MAKE) install
+.PHONY: install
+
+
+uinstall:
+	cd $(BUILD) && $(CMAKE) -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=~/.local $(TOP) && $(MAKE) && $(MAKE) install
+.PHONY: uinstall
+
+
 clean:
 	-(cd $(BUILD) && $(MAKE) clean)
 .PHONY: clean
